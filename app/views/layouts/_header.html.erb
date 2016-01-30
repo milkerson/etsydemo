@@ -22,6 +22,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="caret"></span></a>
           <ul class="dropdown-menu">
             <% if user_signed_in?  %>
+              <li><%= link_to "Manage My Listings", seller_path %></li>
               <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
               <li role="separator" class="divider"></li>
               <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
