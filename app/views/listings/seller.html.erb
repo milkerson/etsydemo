@@ -1,5 +1,5 @@
 <% if user_signed_in? %>
-  <h4 class="pull-left">Hi, <%= current_user.name %>!</h4>
+  <h4 class="pull-left">Hi, <%= current_user.name %>. These are your current listings.</h4>
   <%= link_to 'Create New Listing', new_listing_path, class: "btn btn-primary btn-xs pull-right" %><br><br>
 <% end %>
 
